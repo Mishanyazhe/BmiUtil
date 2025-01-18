@@ -149,12 +149,12 @@ namespace BmiUtil
 
                 if (reader.Read())
                 {
-                    Console.WriteLine($"total records: {reader["TotalRecords"]}");
-                    Console.WriteLine($"underweight: {reader["Underweight"]}");
-                    Console.WriteLine($"normal: {reader["Normal"]}");
-                    Console.WriteLine($"overweight: {reader["Overweight"]}");
-                    Console.WriteLine($"the highest client: {reader["TallestClient"]} см");
-                    Console.WriteLine($"the heaviest client: {reader["HeaviestClient"]} кг");
+                    Console.WriteLine($"total records:\t{reader["TotalRecords"]}");
+                    Console.WriteLine($"underweight:\t{reader["Underweight"]}");
+                    Console.WriteLine($"normal:\t\t{reader["Normal"]}");
+                    Console.WriteLine($"overweight:\t{reader["Overweight"]}");
+                    Console.WriteLine($"highest client:\t{reader["TallestClient"]} см");
+                    Console.WriteLine($"heaviest client:{reader["HeaviestClient"]} кг");
                 }
             }
             catch (Exception ex)
